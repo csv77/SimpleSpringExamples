@@ -12,6 +12,7 @@ public class MainApp {
 		bottle2.setString("It was much better!");
 		bottle1.getDrunk();
 		bottle2.getDrunk();
+		
 		context.close();
 	}
 }
