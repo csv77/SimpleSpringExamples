@@ -8,6 +8,6 @@ public class Beer implements Drink {
 	
 	@Override
 	public void drink() {
-		System.out.println("Drink a beer!");
+		System.out.println("Drink a glass of beer!");
 	}
 }
