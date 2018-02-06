@@ -8,7 +8,7 @@ public class Whiskey implements Drink {
 
 	@Override
 	public void drink() {
-		System.out.println("Drink a whiskey!");
+		System.out.println("Drink a flass whiskey!");
 	}
 
 }

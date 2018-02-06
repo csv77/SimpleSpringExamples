@@ -8,7 +8,7 @@ public class Wine implements Drink {
 	
 	@Override
 	public void drink() {
-		System.out.println("Drink a wine!");
+		System.out.println("Drink a glas of wine!");
 	}
 
 }
