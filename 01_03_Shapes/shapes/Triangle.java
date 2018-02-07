@@ -1,20 +1,15 @@
 package shapes;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource("classpath:triangle.properties")
 public class Triangle implements Shape {
 	double a, b, c;
 
-	public Triangle(@Value("${triangle.a}") String a,
-			@Value("${triangle.b}") String b,
-			@Value("${triangle.c}") String c) {
-		this.a = Double.parseDouble(a);
-		this.b = Double.parseDouble(b);
-		this.c = Double.parseDouble(c);
+	public Triangle(double a, double b, double c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
 	}
 
 	@Override

@@ -1,16 +1,13 @@
 package shapes;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource("classpath:circle.properties")
 public class Circle implements Shape {
 	double radius;
 	
-	public Circle(@Value("${circle.radius}") String radius) {
-		this.radius = Double.parseDouble(radius);
+	public Circle(double radius) {
+		this.radius = radius;
 	}
 
 	@Override

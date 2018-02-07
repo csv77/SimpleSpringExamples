@@ -1,18 +1,14 @@
 package shapes;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component
-@PropertySource("classpath:rectangle.properties")
 public class Rectangle implements Shape {
 	double a, b;
 		
-	public Rectangle(@Value("${rectangle.a}") String a,
-			@Value("${rectangle.b}") String b) {
-		this.a = Double.parseDouble(a);
-		this.b = Double.parseDouble(b);
+	public Rectangle(double a, double b) {
+		this.a = a;
+		this.b = b;
 	}
 
 	@Override
