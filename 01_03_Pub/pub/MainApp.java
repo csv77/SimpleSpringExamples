@@ -9,7 +9,7 @@ public class MainApp {
 		Bottle bottle1 = context.getBean(Bottle.class);
 		Bottle bottle2 = context.getBean(Bottle.class);
 		bottle1.setString("It was good!");
-		bottle2.setString("It was much better!");
+		bottle2.setString("This 2nd was much better!");
 		bottle1.getDrunk();
 		bottle2.getDrunk();
 		context.close();
