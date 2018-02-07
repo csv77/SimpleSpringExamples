@@ -16,7 +16,7 @@ public class Whiskey implements Drink {
 
 	@Override
 	public void drink() {
-		System.out.println("Drink a glass of whiskey!" + " " + text);
+		System.out.println("Drink a glass of whiskey! " + text);
 	}
 
 }
