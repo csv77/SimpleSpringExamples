@@ -10,5 +10,4 @@ public class MainApp {
 		PrintShapes printShapes = context.getBean(PrintShapes.class);
 		printShapes.printShapes();
 	}
-
 }
