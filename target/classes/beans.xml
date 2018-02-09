@@ -3,37 +3,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
-	<bean id="rectangle" class="shapescollection.Rectangle">
-		<constructor-arg type="double" index="0" value="100"/>
-		<constructor-arg type="double" index="1" value="200"/>
-		<property name="formatter" ref="format"/>
+	<import resource="circle.xml"/>
+	
+	<bean id="rectangle" class="shapes2.Rectangle">
+		<constructor-arg type="double" index="0" value="10"/>
+		<constructor-arg type="double" index="1" value="20"/>
 	</bean>
 	
-	<bean id="triangle" class="shapescollection.Triangle" autowire="byType">
+	<bean id="triangle" class="shapes2.Triangle">
 		<constructor-arg type="double" index="0" value="10"/>
 		<constructor-arg type="double" index="1" value="20"/>
 		<constructor-arg type="double" index="2" value="15"/>
-<!-- 		<property name="formatter" ref="format"/> -->
 	</bean>
 	
-	
-	<bean id="circle" class="shapescollection.Circle" autowire="byType">
-		<constructor-arg type="double" index="0" value="50"/>
-<!-- 		<property name="formatter" ref="format"/> -->
-	</bean>
-	
-	<bean id="format" class="java.text.DecimalFormat">
-		<constructor-arg value="###,###.00"/>
-	</bean>
-	
-	<bean id="printShapes" class="shapescollection.PrintShapes">
-		<constructor-arg type="java.util.List" name="listOfShapes">
-			<list>
-				<ref bean="circle"/>
-				<ref bean="triangle"/>
-				<ref bean="rectangle"/>
-			</list>
-		</constructor-arg>
-	</bean>
-
 </beans>
