@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<import resource="circle.xml"/>
+	
+	<bean id="rectangle" class="shapes2.Rectangle">
+		<constructor-arg type="double" index="0" value="10"/>
+		<constructor-arg type="double" index="1" value="20"/>
+	</bean>
+	
+	<bean id="triangle" class="shapes2.Triangle">
+		<constructor-arg type="double" index="0" value="10"/>
+		<constructor-arg type="double" index="1" value="20"/>
+		<constructor-arg type="double" index="2" value="15"/>
+	</bean>
+	
+</beans>
