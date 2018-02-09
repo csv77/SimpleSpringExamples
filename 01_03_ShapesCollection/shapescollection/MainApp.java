@@ -9,5 +9,6 @@ public class MainApp {
 		ApplicationContext context = new GenericXmlApplicationContext("beansofshapescollection.xml");
 		PrintShapes printShapes = context.getBean(PrintShapes.class);
 		printShapes.printShapes();
+		
 	}
 }
