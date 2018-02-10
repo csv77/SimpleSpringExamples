@@ -16,7 +16,6 @@
 <!-- 		<property name="formatter" ref="format"/> -->
 	</bean>
 	
-	
 	<bean id="circle" class="shapescollection.Circle" autowire="byType">
 		<constructor-arg type="double" index="0" value="50"/>
 <!-- 		<property name="formatter" ref="format"/> -->
