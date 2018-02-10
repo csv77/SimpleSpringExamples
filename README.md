@@ -1,2 +1,2 @@
 # SimpleSpringExamples
-Simple exercises to Spring Framework (Core Spring)
+Simple exercises with Spring Framework (Core Spring)
