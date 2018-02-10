@@ -1,8 +1,21 @@
 package shapescollection;
 
-public interface Shape {
+import java.text.DecimalFormat;
 
-	public double getArea();
+public abstract class Shape {
+	DecimalFormat formatter;
 	
-	public double getPerimeter();
+	public abstract double getArea();
+	
+	public abstract double getPerimeter();
+	
+	public void setFormatter(DecimalFormat formatter) {
+		this.formatter = formatter;
+	}
+
+	@Override
+	public String toString() {
+		return getClass().getSimpleName() + " area: " + formatter.format(getArea()) +
+				"\n" + getClass().getSimpleName() + " perimeter: " + formatter.format(getPerimeter());
+	}
 }

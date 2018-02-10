@@ -1,6 +1,6 @@
 package shapescollection;
 
-public class Circle extends ShapeObject {
+public class Circle extends Shape {
 	double radius;
 	
 	public Circle(double radius) {

@@ -1,6 +1,6 @@
 package shapescollection;
 
-public class Rectangle extends ShapeObject {
+public class Rectangle extends Shape {
 	double a, b;
 		
 	public Rectangle(double a, double b) {

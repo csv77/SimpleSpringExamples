@@ -1,6 +1,6 @@
 package shapescollection;
 
-public class Triangle extends ShapeObject {
+public class Triangle extends Shape {
 	double a, b, c;
 
 	public Triangle(double a, double b, double c) {
