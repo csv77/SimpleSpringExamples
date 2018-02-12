@@ -1,8 +1,5 @@
 package shapescollectionwithaspects;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Triangle extends Shape {
 	double a, b, c;
 

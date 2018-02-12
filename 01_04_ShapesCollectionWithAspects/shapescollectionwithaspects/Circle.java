@@ -1,8 +1,5 @@
 package shapescollectionwithaspects;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class Circle extends Shape {
 	double radius;
 	
