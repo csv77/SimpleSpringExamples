@@ -3,10 +3,10 @@ package shapeswithaspect;
 public class MessageAspect {
 	
 	public void messageBefore() {
-		System.out.println("Before calculating the area and perimeter!");
+		System.out.println("Area of the circle will be calculated.");
 	}
 	
 	public void messageAfter() {
-		System.out.println("After calculating the area and perimeter!");
+		System.out.println("Area of the circle was calculated.");
 	}
 }

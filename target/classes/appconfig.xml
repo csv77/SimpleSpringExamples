@@ -18,8 +18,8 @@
 	
 	<aop:config>
 		<aop:aspect id="firstAspect" ref="messageAspect">
-			<aop:pointcut id="circleAspect" expression="execution(** shapeswithaspect.Shape.getArea(..)))"/>
-			<aop:pointcut id="circleAspect2" expression="execution(** shapeswithaspect.Shape.toString(..)))"/>
+			<aop:pointcut id="circleAspect" expression="execution(** shapeswithaspect.Circle.printArea(..)))"/>
+			<aop:pointcut id="circleAspect2" expression="execution(** shapeswithaspect.Circle.printArea(..)))"/>
 			<aop:before pointcut-ref="circleAspect"	method="messageBefore"/>
 			<aop:after-returning pointcut-ref="circleAspect2" method="messageAfter"/>
 		</aop:aspect>
