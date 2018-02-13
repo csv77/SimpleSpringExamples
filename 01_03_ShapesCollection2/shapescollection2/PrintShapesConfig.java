@@ -1,4 +1,4 @@
-package shapescollectionwithaspects;
+package shapescollection2;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

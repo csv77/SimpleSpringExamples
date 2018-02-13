@@ -1,4 +1,4 @@
-package shapescollectionwithaspects;
+package shapescollection2;
 
 public class Rectangle extends Shape {
 	double a, b;

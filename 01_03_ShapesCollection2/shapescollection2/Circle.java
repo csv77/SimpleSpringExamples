@@ -1,4 +1,4 @@
-package shapescollectionwithaspects;
+package shapescollection2;
 
 public class Circle extends Shape {
 	double radius;

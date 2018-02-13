@@ -1,4 +1,4 @@
-package shapescollectionwithaspects;
+package shapescollection2;
 
 import java.text.DecimalFormat;
 import org.springframework.beans.factory.annotation.Autowired;

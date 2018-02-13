@@ -1,4 +1,4 @@
-package shapescollectionwithaspects;
+package shapescollection2;
 
 public class Triangle extends Shape {
 	double a, b, c;
