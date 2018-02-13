@@ -7,6 +7,7 @@
 	<classpathentry kind="src" path="01_03_ShapesCollection"/>
 	<classpathentry kind="src" path="01_03_ShapesCollection2"/>
 	<classpathentry kind="src" path="01_04_ShapesWithAspect"/>
+	<classpathentry kind="src" path="01_04_ShapesWithAspect2"/>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
