@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+	
+	<bean name="circle" class="shapeswithaspect.Circle">
+		<constructor-arg type="double" value="10"/>
+		<property name="formatter" ref="decimalFormatter"></property>
+	</bean>
+	
+	<bean name="decimalFormatter" class="java.text.DecimalFormat">
+		<constructor-arg value="###,###.00"/>
+	</bean>
+	
+	<bean id="messageAspect" class="shapeswithaspect.MessageAspect"/>
+	
+	<aop:config>
+		<aop:aspect id="firstAspect" ref="messageAspect">
+			<aop:pointcut id="circleAspect" expression="execution(** shapeswithaspect.Shape.getArea(..)))"/>
+			<aop:pointcut id="circleAspect2" expression="execution(** shapeswithaspect.Shape.toString(..)))"/>
+			<aop:before pointcut-ref="circleAspect"	method="messageBefore"/>
+			<aop:after-returning pointcut-ref="circleAspect2" method="messageAfter"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

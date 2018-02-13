@@ -6,6 +6,7 @@
 	<classpathentry kind="src" path="01_03_Shapes2"/>
 	<classpathentry kind="src" path="01_03_ShapesCollection"/>
 	<classpathentry kind="src" path="01_03_ShapesCollection2"/>
+	<classpathentry kind="src" path="01_04_ShapesWithAspect"/>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -33,5 +34,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/egyéb/SZE/EclipseJavaProjects/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="C:/egyéb/SZE/EclipseJavaProjects/aspectj-weaver.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
