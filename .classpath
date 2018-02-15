@@ -8,6 +8,7 @@
 	<classpathentry kind="src" path="01_03_ShapesCollection2"/>
 	<classpathentry kind="src" path="01_04_ShapesWithAspect"/>
 	<classpathentry kind="src" path="01_04_ShapesWithAspect2"/>
+	<classpathentry kind="src" path="01_04_Interest"/>
 	<classpathentry kind="src" output="target/classes" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
@@ -35,5 +36,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

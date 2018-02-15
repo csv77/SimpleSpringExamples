@@ -9,6 +9,7 @@
 	<configs>
 		<config>01_03_ShapesCollection/beansofshapescollection.xml</config>
 		<config>01_04_ShapesWithAspect/appconfig.xml</config>
+		<config>01_04_Interest/calculator.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
