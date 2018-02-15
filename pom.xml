@@ -96,12 +96,5 @@
 			<artifactId>aspectjtools</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.jruby/jruby-complete -->
-		<dependency>
-		    <groupId>org.jruby</groupId>
-		    <artifactId>jruby-complete</artifactId>
-		    <version>9.1.15.0</version>
-		</dependency>
 	</dependencies>	
-	
 </project>
