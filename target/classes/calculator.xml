@@ -6,8 +6,10 @@
 		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-4.3.xsd">
 
 	<lang:groovy id="interestCalculator" script-source="classpath:SimpleInterestCalculator.groovy">
-		<lang:property name="rate" value="0.05"/>
+		<lang:property name="rateCalculator" ref="rateCalculator"/>
 	</lang:groovy>
 	
-	
+	<bean id="rateCalculator" class="interest.FixedRateCalculator">
+		<property name="rate" value="0.05"/>
+	</bean>
 </beans>

@@ -2,7 +2,7 @@ package interest;
 
 public interface InterestCalculator {
 	
-	public void setRate(double rate);
+	public void setRateCalculator(RateCalculator rateCalculator);
 	
 	public double calculate(double amount, double year);
 }
